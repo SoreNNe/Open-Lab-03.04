@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Security.Cryptography.X509Certificates;
 
 namespace Open_Lab_03._04
 {
@@ -6,7 +7,11 @@ namespace Open_Lab_03._04
     {
         public string EvenOrOdd(int number)
         {
-            throw new NotImplementedException();
+            if (number % 2 == 0)
+                return "even";
+            else
+                return "odd";
+
         }
     }
 }
